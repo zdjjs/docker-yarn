@@ -10,4 +10,4 @@ RUN apk --no-cache update \
 
 WORKDIR /var/www/html
 
-ENTRYPOINT [ "prehook", "yarn install", "--", "yarn", "watch" ]
+CMD [ "prehook", "yarn install", "--", "yarn", "watch" ]
